@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="w-full h-full" style={{height:'75vh'}} >
+        <header className="w-full bg-greenOne" style={{height:'75vh'}} >
           <div className= "h-full w-full relative text-center p-12 pb-0">
             <Image 
               src='/assets/TopHeaderImage.png'

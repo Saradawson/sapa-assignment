@@ -16,12 +16,8 @@
   }
 } */
 
-body {
-  background-color: #103c00;
-}
-
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
