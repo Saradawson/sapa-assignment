@@ -20,7 +20,7 @@ const config: Config = {
     },
     fontFamily: {
       'sans': ['"Proxima Nova"']
-    }
+    },
   },
   plugins: [],
 };

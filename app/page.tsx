@@ -1,16 +1,19 @@
 import Header from "./pages/header";
 import Events from "./pages/events";
 import ThingsToKnow from "./pages/thingsToKnow";
+import Ad from "./pages/ads"
 
 export default function Page() {
   return (
-    <div className="min-h-screen w-screen flex flex-col">
+    <div>
         <Header></Header>
-        <main className="flex flex-col items-center max-h-screen w-screen">
-          <h1 className="text-4xl text-greenTwo my-2">{"Utah's Cannabis Community"}</h1>
+        <main>
+          <h1></h1>
           <Events></Events>
           <ThingsToKnow></ThingsToKnow>
+          <Ad></Ad>
         </main>
+
         <footer>
         </footer>
     </div>
