@@ -2,19 +2,20 @@ import Image from "next/image";
 
 export default function Ads() {
     return (
-        <section className="flex flex-col justify-center gap-20">
+        <section className="flex flex-col items-center min-w-full">
+          <div className="flex flex-col items-center max-w-fit">
             <Image 
               src="/assets/MockBannerAd.png" 
               alt="Leaf Nation"
-              className="w-full"
+              className="min-w-full"
               width={1200}
               height={300}
             />
-            <div className="flex items-start justify-center gap-20">
+            <div className="flex items-start justify-start py-20">
               <Image 
                 src="/assets/Consultation.png"
                 alt="consultation"
-                className="w-3/5 opacity-"
+                className="w-2/3 pr-20"
                 width={640}
                 height={553}
               />
@@ -26,10 +27,11 @@ export default function Ads() {
             <Image
               src="/assets/updatedAssets/ReviewBanner.png"
               alt="Review banner"
-              className="w-full"
+              className="min-w-full"
               width={1182}
               height={181}
             />
+          </div>
         </section>
     );
 }

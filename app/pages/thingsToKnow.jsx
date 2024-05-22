@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ThingsToKnow(){
     return (
-        <section className="w-full p-8 flex flex-col items-center justify-evenly">
+        <section className="w-full py-8 flex flex-col items-center justify-evenly">
             <h2 className="text-4xl text-greenTwo">Things to know before your appointment</h2>
             <div>
                 <div className="py-6 w-full flex items-center justify-start">
