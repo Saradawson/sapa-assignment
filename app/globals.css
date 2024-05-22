@@ -7,10 +7,4 @@
     @apply min-h-fit;
     @apply max-w-full;
   }
-
-  main {
-    @apply flex flex-col items-center;
-    @apply min-h-fit;
-    @apply w-full;
-  }
 }
