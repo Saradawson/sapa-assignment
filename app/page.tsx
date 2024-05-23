@@ -4,6 +4,7 @@ import ThingsToKnow from "./pages/thingsToKnow";
 import Ad from "./pages/ads";
 import FAQ from './pages/faq';
 import Pharmacies from './pages/pharmacies';
+import About from "./pages/about";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
             <Ad></Ad>
             <FAQ></FAQ>
             <Pharmacies></Pharmacies>
+            <About></About>
           </div>
         </main>
         <footer>
