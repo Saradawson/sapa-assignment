@@ -20,7 +20,7 @@ const config: Config = {
       white: 'white'
     },
     fontFamily: {
-      'sans': ['"Proxima Nova"']
+      "proximaNova": ["Proxima Nova"]
     },
   },
   plugins: [],

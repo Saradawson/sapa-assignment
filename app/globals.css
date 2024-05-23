@@ -3,4 +3,27 @@
 @tailwind utilities;
 
 @layer base {
+  h1 {
+    font-family: 'Proxima Nova Condensed', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-weight: bolder;
+  }
+
+  h4 {
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: 'Interstate-condensed', sans-serif;
+    font-weight: lighter;
+  }
 }

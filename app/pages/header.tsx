@@ -14,11 +14,11 @@ export default function Header() {
             />
             <div className="relative flex flex-col items-center justify-between h-full w-full">
               <nav className="text-xl relative w-9/12 flex justify-evenly pt-10 text-greenOne">
-                <Link className="nav-link" href='/appointments'>APPOINTMENTS</Link>
-                <Link className="nav-link" href='/medical'>MEDICAL</Link>
-                <Link className="nav-link" href='/FAQs'>FAQs</Link>
-                <Link className="nav-link" href='/Pharmacies'>PHARMACIES</Link>
-                <Link className="nav-link" href='/About'>ABOUT</Link>
+                <Link className="nav-link font-semibold" href='/appointments'>APPOINTMENTS</Link>
+                <Link className="nav-link font-semibold" href='/medical'>MEDICAL</Link>
+                <Link className="nav-link font-semibold" href='/FAQs'>FAQs</Link>
+                <Link className="nav-link font-semibold" href='/Pharmacies'>PHARMACIES</Link>
+                <Link className="nav-link font-semibold" href='/About'>ABOUT</Link>
               </nav>
               <Image 
                 src='/assets/updatedAssets/UtahGrownLogoWhiteBorder.png' 

@@ -13,7 +13,7 @@ export default function Page() {
         <Header></Header>
         <main className="min-w-fit flex flex-col items-center px-20">
           <div className="max-w-fit">
-            <h1></h1>
+            <h1 className="text-center w-full text-4xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
             <Events></Events>
             <ThingsToKnow></ThingsToKnow>
             <Ad></Ad>
