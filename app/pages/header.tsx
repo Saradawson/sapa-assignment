@@ -13,7 +13,7 @@ export default function Header() {
               sizes="90vh"
             />
             <div className="relative flex flex-col items-center justify-between h-full w-full">
-              <nav className="relative w-9/12 flex justify-evenly">
+              <nav className="text-xl relative w-9/12 flex justify-evenly pt-10 text-greenOne">
                 <Link className="nav-link" href='/appointments'>APPOINTMENTS</Link>
                 <Link className="nav-link" href='/medical'>MEDICAL</Link>
                 <Link className="nav-link" href='/FAQs'>FAQs</Link>

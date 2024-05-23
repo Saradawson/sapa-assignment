@@ -16,7 +16,8 @@ const config: Config = {
       tanTwo: '#e7cbaf',
       greyOne: '#333333',
       greyTwo: '#808080',
-      greyThree: '#f2f2f2'
+      greyThree: '#f2f2f2',
+      white: 'white'
     },
     fontFamily: {
       'sans': ['"Proxima Nova"']

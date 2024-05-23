@@ -5,12 +5,13 @@ import Ad from "./pages/ads";
 import FAQ from './pages/faq';
 import Pharmacies from './pages/pharmacies';
 import About from "./pages/about";
+import Footer from "./pages/footer";
 
 export default function Page() {
   return (
-    <div>
+    <div className="min-w-screen min-h-screen">
         <Header></Header>
-        <main className="min-w-fit flex flex-col items-center p-20">
+        <main className="min-w-fit flex flex-col items-center px-20">
           <div className="max-w-fit">
             <h1></h1>
             <Events></Events>
@@ -21,8 +22,7 @@ export default function Page() {
             <About></About>
           </div>
         </main>
-        <footer>
-        </footer>
+        <Footer></Footer>
     </div>
   );
 }

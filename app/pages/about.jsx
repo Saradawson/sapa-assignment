@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return(
-        <section className="min-w-full py-10">
+        <section className="min-w-full pt-10 pb-20">
             <div className="flex min-w-full justify-between">
                 <div className="flex flex-col gap-20 pt-20">
                     <div>
@@ -14,13 +14,15 @@ export default function About() {
                         <h3 className="text-4xl text-greyTwo leading-10">730 State Street <br/> Salt Lake City, Utah 84111</h3>
                     </div>
                 </div>
-                <Image
-                    src="/assets/NormalizeItUtah.png"
-                    alt="normalize Utah"
-                    className="float-right"
-                    width={800}
-                    height={1000}
-                />
+                <div className="w-full flex justify-end">
+                    <Image
+                        src="/assets/NormalizeItUtah.png"
+                        alt="normalize Utah"
+                        className="absolute"
+                        width={800}
+                        height={1000}
+                    />
+                </div>
             </div>
         </section>
     );
