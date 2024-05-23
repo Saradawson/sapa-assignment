@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div>
         <Header></Header>
-        <main className="min-w-fit flex flex-col items-center">
+        <main className="min-w-fit flex flex-col items-center p-20">
           <div className="max-w-fit">
             <h1></h1>
             <Events></Events>
