@@ -14,7 +14,7 @@ export default function Header() {
                     fill
                   />
                   <div className=" h-full relative flex flex-col items-center justify-between font-semibold">
-                    <nav className="h-full text-xl relative flex justify-between p-10 text-greenOne sm:flex-col">
+                    <nav className="w-full lg:w-3/4 text-xl relative flex justify-between p-10 text-greenOne sm:flex-col">
                       <Link href='/appointments'>APPOINTMENTS</Link>
                       <Link href='/medical'>MEDICAL</Link>
                       <Link href='/FAQs'>FAQs</Link>
