@@ -46,9 +46,9 @@ export default function Pharmacies() {
 
     function PharmacyDivCreator(pharmacy) {
         return(
-            <div className="min-w-full">
+            <div className="">
                 <h3 className="text-4xl text-greenThree leading-relaxed">{pharmacy}</h3>
-                <div className="min-w-full flex justify-between">
+                <div className=" flex justify-between">
                     <ui className="flex flex-col w-1/2">
                         {pharmInfo[pharmacy]["addresses"].map(key => (<p key={key} className="text-3xl text-greyTwo">{key}</p>))}
                     </ui>
@@ -64,7 +64,7 @@ export default function Pharmacies() {
     return (
         <section className="flex flex-col items-start gap-10">
             <h2 className="text-7xl text-greenTwo">{"Utah Medical Cannabis Pharmacies"}</h2>
-            <div className="min-w-full flex flex-col justify-start gap-7">
+            <div className=" flex flex-col justify-start gap-7">
                 {PharmacyDivCreator("Dragonfly Wellness")}
                 {PharmacyDivCreator("Bloc Pharmacy")}
                 {PharmacyDivCreator("Beehive Farmacy")}

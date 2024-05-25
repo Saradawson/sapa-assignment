@@ -19,9 +19,18 @@ const config: Config = {
       greyThree: '#f2f2f2',
       white: 'white'
     },
+
     fontFamily: {
       "proximaNova": ["Proxima Nova"]
     },
+
+    screens: {
+      'sm': {min: "300px", max: "430px"},
+
+      'md': {min: "601px", max: "1024px"},
+
+      'lg': {min: "1024px", max: "1920px"},
+    }
   },
   plugins: [],
 };

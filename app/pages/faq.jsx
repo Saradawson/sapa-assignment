@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function FAQ() {
     return (
-        <section className="flex w-full py-20">
-            <div className="flex flex-col max-w-fit">
-                <h2 className="text-7xl leading-loose text-greenTwo max-w-fit">{"FAQs..."}</h2>
-                <div className="flex flex-col max-w-fit">  
+        <section className="flex  py-20">
+            <div className="flex flex-col ">
+                <h2 className="text-7xl leading-loose text-greenTwo ">{"FAQs..."}</h2>
+                <div className="flex flex-col ">  
                     <Link href="/FAQs" className="leading-relaxed max-w-prose text-4xl text-greenThree" >{"If I don’t qualify, do i still have to pay the QMP?"}</Link>
                     <Link href="/FAQs" className="leading-relaxed max-w-prose text-4xl text-greenThree" >{"What are Utah’s qualifying medical conditions?"}</Link>
                     <Link href="/FAQs" className="leading-relaxed max-w-prose text-4xl text-greenThree" >{"Is documentation required to prove you have a medical condition?"}</Link>

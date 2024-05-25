@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function About() {
     return(
-        <section className="min-w-full pt-10 pb-20">
-            <div className="flex min-w-full justify-between">
+        <section className=" pt-10 pb-20">
+            <div className="flex  justify-between">
                 <div className="flex flex-col gap-20 pt-20">
                     <div>
                         <h2 className="text-7xl text-greenTwo leading-normal">{"About Utah Grown"}</h2>
@@ -14,9 +14,9 @@ export default function About() {
                         <h3 className="text-4xl text-greyTwo leading-10">730 State Street <br/> Salt Lake City, Utah 84111</h3>
                     </div>
                 </div>
-                <div className="w-full flex justify-end">
+                <div className=" flex justify-end">
                     <Image
-                        src="/assets/NormalizeItUtah.png"
+                        src="/assets/NormalizeItUtah@2x.png"
                         alt="normalize Utah"
                         className="absolute"
                         width={800}

@@ -9,20 +9,20 @@ import Footer from "./pages/footer";
 
 export default function Page() {
   return (
-    <div className="min-w-screen min-h-screen">
+    <div className="min-h-screen">
         <Header></Header>
-        <main className="min-w-fit flex flex-col items-center px-20">
-          <div className="max-w-fit">
-            <h1 className="text-center w-full text-4xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
+        {/* <main className="mx- flex flex-col items-center px-20">
+          <div className="">
+            <h1 className="text-center  text-4xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
             <Events></Events>
             <ThingsToKnow></ThingsToKnow>
             <Ad></Ad>
-            <FAQ></FAQ>
+            <FAQ></FAQ> 
             <Pharmacies></Pharmacies>
             <About></About>
           </div>
         </main>
-        <Footer></Footer>
+        <Footer></Footer> */}
     </div>
   );
 }

@@ -2,9 +2,9 @@
 
 export default function Events() {
     return(
-        <section className="w-full flex flex-col items-center">
-                <h2 className="text-6xl text-greenOne my-4 p">Upcoming Utah Medical Card Events</h2>
-                <div className="flex flex-col w-full px-40">
+        <section className="min-w-full flex flex-col items-center">
+                <h2 className="text-5xl text-greenOne my-4">Upcoming Utah Medical Card Events</h2>
+                <div className="w-3/4 flex flex-col">
                     <div className="border-color-greenTwo bg-greyThree border my-6 rounded-xl p-5 flex justify-around items-center">
                         <p className="text-2xl text-greenThree text-center">Downtown<br/> SLC</p>
                         <ui className="text-center flex flex-col items-start justify-evenly">

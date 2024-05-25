@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function ThingsToKnow(){
     return (
-        <section className="w-full py-8 flex flex-col items-center justify-evenly">
+        <section className=" py-8 flex flex-col items-center justify-evenly">
             <h2 className="text-4xl text-greenTwo">Things to know before your appointment</h2>
-            <div>
-                <div className="py-6 w-full flex items-center justify-start">
+            <div className="w-3/4">
+                <div className="py-6  flex items-center justify-start">
                     <Image
-                        src="/assets/updatedAssets/Number1.png"
+                        src="/assets/updatedAssets/Number1@2x.png"
                         alt="number 1"
                         width={68}
                         height={69}
@@ -32,7 +32,7 @@ export default function ThingsToKnow(){
                         </div>
                         <div className="pl-60">
                             <Image 
-                                src="/assets/updatedAssets/AwaitingCert-Image.png" 
+                                src="/assets/updatedAssets/AwaitingCert-Image@2x.png" 
                                 alt="Awaiting Certificate"
                                 width={256}
                                 height={108}
@@ -40,10 +40,10 @@ export default function ThingsToKnow(){
                         </div>
                     </ui>
                 </div>
-                <div className="py-6 w-full flex items-start">
+                <div className="py-6  flex items-start">
                     <ui className="flex items-center">
                         <Image
-                            src="/assets/updatedAssets/Number2.png"
+                            src="/assets/updatedAssets/Number2@2x.png"
                             alt="number 1"
                             width={68}
                             height={69}
@@ -58,10 +58,10 @@ export default function ThingsToKnow(){
                         <h4 className="text-2xl text-greenTwo">{"3. Payment"}</h4>
                     </ui>
                 </div>       
-                <div className="py-6 w-full flex items-start">
+                <div className="py-6  flex items-start">
                     <ui className="flex items-center">
                         <Image
-                        src="/assets/updatedAssets/Number3.png"
+                        src="/assets/updatedAssets/Number3@2x.png"
                         alt="number 1"
                         width={68}
                         height={69}
