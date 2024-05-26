@@ -11,18 +11,18 @@ export default function Page() {
   return (
     <div className="min-h-screen">
         <Header></Header>
-        {/* <main className="mx- flex flex-col items-center px-20">
-          <div className="">
-            <h1 className="text-center  text-4xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
+        <main className="w-full sm:p-1 md:p-0 flex flex-col items-center">
+          <div className="w-full">
+            <h1 className="text-center  text-3xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
             <Events></Events>
-            <ThingsToKnow></ThingsToKnow>
+            {/* <ThingsToKnow></ThingsToKnow> */}
             <Ad></Ad>
-            <FAQ></FAQ> 
-            <Pharmacies></Pharmacies>
-            <About></About>
+            {/* <FAQ></FAQ>  */}
+            {/* <Pharmacies></Pharmacies> */}
+            {/* <About></About> */}
           </div>
         </main>
-        <Footer></Footer> */}
+        {/* <Footer></Footer> */}
     </div>
   );
 }
