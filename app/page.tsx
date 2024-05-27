@@ -15,7 +15,7 @@ export default function Page() {
           <div className="w-fit">
             <h1 className="text-center  text-3xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
             <Events></Events>
-            {/* <ThingsToKnow></ThingsToKnow> */}
+            <ThingsToKnow></ThingsToKnow>
             <Ad></Ad>
             <FAQ></FAQ> 
             <Pharmacies></Pharmacies>
