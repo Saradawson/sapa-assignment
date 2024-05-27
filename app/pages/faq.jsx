@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function FAQ() {
     return (
         <section className="w-full flex py-20">
-            <div className="flex flex-col ">
+            <div className="w-full flex flex-col ">
                 <h2 className="text-4xl leading-loose text-greenTwo ">{"FAQs..."}</h2>
-                <div className="flex flex-col gap-4">  
+                <div className="w-full flex flex-col gap-4">  
                     <Link href="/FAQs" className="leading-relaxed max-w-prose text-xl text-greenThree" >{"If I don't qualify, do i still have to pay the QMP?"}</Link>
                     <Link href="/FAQs" className="leading-relaxed max-w-prose text-xl text-greenThree" >{"What are Utah's qualifying medical conditions?"}</Link>
                     <Link href="/FAQs" className="leading-relaxed max-w-prose text-xl text-greenThree" >{"Is documentation required to prove you have a medical condition?"}</Link>

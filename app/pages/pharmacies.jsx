@@ -8,27 +8,27 @@ export default function Pharmacies() {
             "website": "www.dragonflywellness.com"
         },
         "Bloc Pharmacy": {
-            "addresses": ["10392 South Jordan Gateway South Jordan UT 84095", "1624 S Convention Center Dr. St. George UT 84790"],
+            "addresses": ["10392 South Jordan Gateway, South Jordan UT 84095", "1624 S Convention Center Dr, St. George UT 84790"],
             "phone": ["385-249-9400", "435-216-3400"],
             "website": "www.blocdispensary.com"    
         },
         "Beehive Farmacy": {
-            "addresses": ["1991 S 3600 W Salt Lake City UT 84004", "870 W 1150 S Suite C Brigham City UT 84032"],
+            "addresses": ["1991 S 3600 W, Salt Lake City UT 84004", "870 W 1150 S Suite C, Brigham City UT 84032"],
             "phone": ["385-212-0088", "435-919-0966"],
             "website": "www.beehivefarmacy.com"   
         },
         "Cannabist": {
-            "addresses": ["484 South 1750 West Springville UT 84663"],
+            "addresses": ["484 South 1750 West, Springville UT 84663"],
             "phone": ["385-327-0922"],
             "website": "www.gocannabist.com"   
         },
         "Curaleaf": {
-            "addresses": ["3633 N Thanksgiving Way, Lehi UT 84043", "1351 Kearns Blvd Suite 110-B Park City UT 84060", "222 N Draper Ln Provo UT 84601", "757 S 1040 W Payson UT 84651"],
+            "addresses": ["3633 N Thanksgiving Way, Lehi UT 84043", "1351 Kearns Blvd Suite 110-B, Park City UT 84060", "222 N Draper Ln, Provo UT 84601", "757 S 1040 W, Payson UT 84651"],
             "phone": ["385-338-8010", "435-252-1052", "801-872-7447", "385-404-4422"],
             "website": "www.curaleaf.com"   
         },
         "The Flower Shop": {
-            "addresses": ["3775 S Wall Ave South Odgen UT 84405", "2150 N Main St. Suite 1 North Logan UT 84341"],
+            "addresses": ["3775 S Wall Ave, South Odgen UT 84405", "2150 N Main St. Suite 1, North Logan UT 84341"],
             "phone": ["385-289-1800(Ext 1)", "385-289-1800(Ext 2)"],
             "website": "www.theflowershopusa.com"   
         },
@@ -38,41 +38,63 @@ export default function Pharmacies() {
             "website": "www.wholesome.co"   
         },
         "Zion Medicinal": {
-            "addresses": ["301 S Main St. Cedar City UT 84720"],
+            "addresses": ["301 S Main St, Cedar City UT 84720"],
             "phone": ["435-244-4485"],
             "website": "www.zionmed.co"   
         },
     }
 
-    function PharmacyDivCreator(pharmacy) {
+    function PharmacyDivCreatorLg(pharmacy) {
         return(
-            <div className="">
-                <h3 className="text-4xl text-greenThree leading-relaxed">{pharmacy}</h3>
-                <div className=" flex justify-between">
+            <div className="w-full">
+                <h3 className="text-2xl text-greenThree leading-relaxed">{pharmacy}</h3>
+                <div className="flex justify-between">
                     <ui className="flex flex-col w-1/2">
-                        {pharmInfo[pharmacy]["addresses"].map(key => (<p key={key} className="text-3xl text-greyTwo">{key}</p>))}
+                        {pharmInfo[pharmacy]["addresses"].map(key => (<p key={key} className="leading-relaxed text-xl text-greyTwo">{key}</p>))}
                     </ui>
                     <ui className="flex flex-col w-1/4">
-                        {pharmInfo[pharmacy]["phone"].map(key => (<p key={key} className="text-3xl text-greyTwo">{key}</p>))}
+                        {pharmInfo[pharmacy]["phone"].map(key => (<p key={key} className="leading-relaxed text-xl text-greyTwo">{key}</p>))}
                     </ui>
-                    <p className="text-3xl text-greyTwo w-1/4">{pharmInfo[pharmacy]["website"]}</p>
+                    <p className="leading-relaxed text-xl text-greyTwo w-1/4">{pharmInfo[pharmacy]["website"]}</p>
                 </div>
             </div>
         );
     };
 
+    function PharmacyDivCreatorOther(pharmacy){
+        return(
+            <div className="w-full flex flex-col gap-2">
+                <h3 className="text-2xl text-greenThree leading-relaxed">{pharmacy}</h3>
+                <p className="leading-relaxed text-xl text-greyTwo w-1/4">{pharmInfo[pharmacy]["website"]}</p>
+                <ui className="flex flex-col gap-2">
+                    {pharmInfo[pharmacy]["addresses"].map((key, id) => (
+                    <p key={key} className="leading-relaxed text-xl text-greyTwo">{key}<br/>{pharmInfo[pharmacy]["phone"][id]}</p>))}
+                </ui>
+            </div>
+        );
+    };
+
     return (
-        <section className="flex flex-col items-start gap-10">
-            <h2 className="text-7xl text-greenTwo">{"Utah Medical Cannabis Pharmacies"}</h2>
-            <div className=" flex flex-col justify-start gap-7">
-                {PharmacyDivCreator("Dragonfly Wellness")}
-                {PharmacyDivCreator("Bloc Pharmacy")}
-                {PharmacyDivCreator("Beehive Farmacy")}
-                {PharmacyDivCreator("Cannabist")}
-                {PharmacyDivCreator("Curaleaf")}
-                {PharmacyDivCreator("The Flower Shop")}
-                {PharmacyDivCreator("WholesomeCo")}
-                {PharmacyDivCreator("Zion Medicinal")}
+        <section className="w-full flex flex-col items-start gap-10">
+            <h2 className="sm:text-center text-4xl text-greenTwo">{"Utah Medical Cannabis Pharmacies"}</h2>
+            <div className="block sm:hidden md:hidden w-full flex-col justify-start gap-7">
+                {pharmLocations.map((location) => {
+                    return(
+                        <div key={location} className="py-5">
+                            {PharmacyDivCreatorLg(location)}
+                        </div>
+                    );
+                })}
+            </div>
+
+            <div className="hidden sm:block md:block w-full flex-col justify-start gap-7">
+                {pharmLocations.map((location) => {
+                    return(
+                        <div key={location} className="py-2">
+                            {PharmacyDivCreatorOther(location)}
+                        </div>
+                    );
+                })}
             </div>
             <button></button>
         </section>

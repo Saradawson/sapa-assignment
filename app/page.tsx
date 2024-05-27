@@ -11,14 +11,14 @@ export default function Page() {
   return (
     <div className="min-h-screen">
         <Header></Header>
-        <main className="w-full sm:p-1 md:p-0 flex flex-col items-center">
+        <main className="w-full sm:p-1 px-10 flex flex-col items-center">
           <div className="w-fit">
             <h1 className="text-center  text-3xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
             <Events></Events>
             {/* <ThingsToKnow></ThingsToKnow> */}
             <Ad></Ad>
             <FAQ></FAQ> 
-            {/* <Pharmacies></Pharmacies> */}
+            <Pharmacies></Pharmacies>
             {/* <About></About> */}
           </div>
         </main>
