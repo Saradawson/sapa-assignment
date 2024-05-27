@@ -12,7 +12,7 @@ export default function Page() {
     <div className="min-h-screen">
         <Header></Header>
         <main className="w-full sm:p-1 flex flex-col items-center">
-          <div className="w-3/4">
+          <div className="lg:w-3/4 w-full">
             <h1 className="text-center  text-3xl leading-relaxed pb-10 text-greenTwo">{"Utah's Cannabis Community"}</h1>
             <Events></Events>
             <ThingsToKnow></ThingsToKnow>
