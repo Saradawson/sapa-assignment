@@ -21,7 +21,7 @@ export default function HeaderSm(){
             <Image 
                 src='/assets/updatedAssets/UtahGrownLogoWhiteBorder.png' 
                 alt="Utah Grown logo"
-                className="hidden sm:block h-1/4 w-auto relative"
+                className="h-1/4 w-auto relative"
                 width={685}
                 height={340}
             />

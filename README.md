@@ -20,18 +20,43 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Project Description
 
-To learn more about Next.js, take a look at the following resources:
+This project contains 8 sections located in ./app/pages
+[x] header.jsx
+[x] events.jsx
+[x] thingsToKnow.jsx
+[x] ads.jsx
+[x] faq.jsx
+[x] pharmacies.jsx
+[x] about.jsx
+[x] footer.jsx
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I created some extra components for a few of the sections to clean up my code for mobile optimization
+- header.jsx contains 2 components
+    - headerSm.jsx applies to small media optimization
+        [x] nav bar is flex column 
+        [x] header height is 25% 
+    - headerOther.jsx applies to medium and large media optimization
+        [x] nav bar is flex row
+        [x] header height is 75vh
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- events.jsx contains 2 compontnets eventsLg.jsx and eventsOther.jsx
+    - These are both pretty simular in styling
+    - I made this decicion to clean up the tailwind styling
 
-## Deploy on Vercel
+- ads.jsx contains 2 components adsLg.jsx and adsOther.jsx
+    - Both of these have simular as well in styling, but there were a few text layout changes that were making my tailwind stylings messy.
+    - adsLg.jsx applies to large media optimization
+    - adsOther.jsx applies to medium and small media optimization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Plans to clean up this project further
+- all .jsx files
+    [] create components that contains all of the text and hrefs to allow a non-coder to edit without having to do major surgery in many files
+    
+- events.jsx
+    [] create reuseable function that inputs location, date, time, and renewal requirement and creates an event container that incultes a book time button 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# sapa-assignment
+
+
+
